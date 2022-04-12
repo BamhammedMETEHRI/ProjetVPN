@@ -1,0 +1,443 @@
+
+  12/04/2022   00:37.15   /home/mobaxterm  ssh bam@20.86.122.249
+bam@20.86.122.249's password:
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.13.0-1021-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Mon Apr 11 22:31:56 2022 from 93.0.89.239
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+bam@vpnserver:~$ sudo su
+root@vpnserver:/home/bam# passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+root@vpnserver:/home/bam# apt update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1712 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [320 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.9 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [917 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [131 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [916 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [204 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.4 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.4 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7336 B]
+Get:21 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [592 B]
+Get:22 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [42.2 kB]
+Get:23 http://azure.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.1 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+Get:25 http://azure.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:26 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [22.7 kB]
+Get:27 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [15.5 kB]
+Get:28 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [808 B]
+Get:29 http://azure.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:30 http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [1384 kB]
+Get:31 http://azure.archive.ubuntu.com/ubuntu focal-security/main Translation-en [240 kB]
+Get:32 http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9900 B]
+Get:33 http://azure.archive.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [859 kB]
+Get:34 http://azure.archive.ubuntu.com/ubuntu focal-security/restricted Translation-en [122 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages [695 kB]
+Get:36 http://azure.archive.ubuntu.com/ubuntu focal-security/universe Translation-en [122 kB]
+Get:37 http://azure.archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [14.1 kB]
+Get:38 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [20.7 kB]
+Get:39 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5196 B]
+Get:40 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [500 B]
+Fetched 22.4 MB in 3s (8614 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+4 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@vpnserver:/home/bam# apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  libarchive13 libfribidi0 open-vm-tools tcpdump
+4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+3 standard security updates
+Need to get 1368 kB of archives.
+After this operation, 952 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 open-vm-tools amd64 2:11.3.0-2ubuntu0~ubuntu20.04.2 [647 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libfribidi0 amd64 1.0.8-2ubuntu0.1 [24.2 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 tcpdump amd64 4.9.3-4ubuntu0.1 [369 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.2 [327 kB]
+Fetched 1368 kB in 0s (8600 kB/s)
+(Reading database ... 57952 files and directories currently installed.)
+Preparing to unpack .../open-vm-tools_2%3a11.3.0-2ubuntu0~ubuntu20.04.2_amd64.deb ...
+Unpacking open-vm-tools (2:11.3.0-2ubuntu0~ubuntu20.04.2) over (2:11.0.5-4) ...
+Preparing to unpack .../libfribidi0_1.0.8-2ubuntu0.1_amd64.deb ...
+Unpacking libfribidi0:amd64 (1.0.8-2ubuntu0.1) over (1.0.8-2) ...
+Preparing to unpack .../tcpdump_4.9.3-4ubuntu0.1_amd64.deb ...
+Unpacking tcpdump (4.9.3-4ubuntu0.1) over (4.9.3-4) ...
+Preparing to unpack .../libarchive13_3.4.0-2ubuntu1.2_amd64.deb ...
+Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.2) over (3.4.0-2ubuntu1.1) ...
+Setting up tcpdump (4.9.3-4ubuntu0.1) ...
+Setting up libarchive13:amd64 (3.4.0-2ubuntu1.2) ...
+Setting up libfribidi0:amd64 (1.0.8-2ubuntu0.1) ...
+Setting up open-vm-tools (2:11.3.0-2ubuntu0~ubuntu20.04.2) ...
+Installing new version of config file /etc/vmware-tools/tools.conf.example ...
+Installing new version of config file /etc/vmware-tools/vgauth.conf ...
+Removing obsolete conffile /etc/vmware-tools/vm-support ...
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+root@vpnserver:/home/bam# apt install openvpn
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libpkcs11-helper1
+Suggested packages:
+  resolvconf openvpn-systemd-resolved easy-rsa
+The following NEW packages will be installed:
+  libpkcs11-helper1 openvpn
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 521 kB of archives.
+After this operation, 1345 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libpkcs11-helper1 amd64 1.26-1 [44.3 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 openvpn amd64 2.4.7-1ubuntu2.20.04.4 [476 kB]
+Fetched 521 kB in 0s (4244 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libpkcs11-helper1:amd64.
+(Reading database ... 57967 files and directories currently installed.)
+Preparing to unpack .../libpkcs11-helper1_1.26-1_amd64.deb ...
+Unpacking libpkcs11-helper1:amd64 (1.26-1) ...
+Selecting previously unselected package openvpn.
+Preparing to unpack .../openvpn_2.4.7-1ubuntu2.20.04.4_amd64.deb ...
+Unpacking openvpn (2.4.7-1ubuntu2.20.04.4) ...
+Setting up libpkcs11-helper1:amd64 (1.26-1) ...
+Setting up openvpn (2.4.7-1ubuntu2.20.04.4) ...
+ * Restarting virtual private network daemon.                                                                                                                                                          [ OK ]
+Created symlink /etc/systemd/system/multi-user.target.wants/openvpn.service → /lib/systemd/system/openvpn.service.
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+root@vpnserver:/home/bam# apt install easy-rsa
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libccid libpcsclite1 opensc opensc-pkcs11 pcscd
+Suggested packages:
+  pcmciautils
+The following NEW packages will be installed:
+  easy-rsa libccid libpcsclite1 opensc opensc-pkcs11 pcscd
+0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1365 kB of archives.
+After this operation, 5070 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 libccid amd64 1.4.31-1 [72.1 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal/main amd64 libpcsclite1 amd64 1.8.26-3 [22.0 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 pcscd amd64 1.8.26-3 [58.1 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 opensc-pkcs11 amd64 0.20.0-3 [852 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 opensc amd64 0.20.0-3 [324 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 easy-rsa all 3.0.6-1 [36.1 kB]
+Fetched 1365 kB in 0s (10.8 MB/s)
+Selecting previously unselected package libccid.
+(Reading database ... 58062 files and directories currently installed.)
+Preparing to unpack .../0-libccid_1.4.31-1_amd64.deb ...
+Unpacking libccid (1.4.31-1) ...
+Selecting previously unselected package libpcsclite1:amd64.
+Preparing to unpack .../1-libpcsclite1_1.8.26-3_amd64.deb ...
+Unpacking libpcsclite1:amd64 (1.8.26-3) ...
+Selecting previously unselected package pcscd.
+Preparing to unpack .../2-pcscd_1.8.26-3_amd64.deb ...
+Unpacking pcscd (1.8.26-3) ...
+Selecting previously unselected package opensc-pkcs11:amd64.
+Preparing to unpack .../3-opensc-pkcs11_0.20.0-3_amd64.deb ...
+Unpacking opensc-pkcs11:amd64 (0.20.0-3) ...
+Selecting previously unselected package opensc.
+Preparing to unpack .../4-opensc_0.20.0-3_amd64.deb ...
+Unpacking opensc (0.20.0-3) ...
+Selecting previously unselected package easy-rsa.
+Preparing to unpack .../5-easy-rsa_3.0.6-1_all.deb ...
+Unpacking easy-rsa (3.0.6-1) ...
+Setting up libccid (1.4.31-1) ...
+Setting up opensc-pkcs11:amd64 (0.20.0-3) ...
+Setting up libpcsclite1:amd64 (1.8.26-3) ...
+Setting up easy-rsa (3.0.6-1) ...
+Setting up opensc (0.20.0-3) ...
+Setting up pcscd (1.8.26-3) ...
+Created symlink /etc/systemd/system/sockets.target.wants/pcscd.socket → /lib/systemd/system/pcscd.socket.
+pcscd.service is a disabled or a static unit, not starting it.
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+root@vpnserver:/home/bam# cp -r /usr/share/easy-rsa /etc/
+root@vpnserver:/home/bam# cd /etc/easy-rsa/
+root@vpnserver:/etc/easy-rsa# ./easyrsa init-pki
+
+init-pki complete; you may now create a CA or requests.
+Your newly created PKI dir is: /etc/easy-rsa/pki
+
+root@vpnserver:/etc/easy-rsa# cd /etc/easy-rsa/
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-ca
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+
+Enter New CA Key Passphrase:
+Re-Enter New CA Key Passphrase:
+Generating RSA private key, 2048 bit long modulus (2 primes)
+..........................................................................+++++
+...............................................................+++++
+e is 65537 (0x010001)
+140244048835904:error:28078065:UI routines:UI_set_result_ex:result too small:../crypto/ui/ui_lib.c:905:You must type in 4 to 1023 characters
+140244048835904:error:28078065:UI routines:UI_set_result_ex:result too small:../crypto/ui/ui_lib.c:905:You must type in 4 to 1023 characters
+140244048835904:error:0906906F:PEM routines:PEM_ASN1_write_bio:read key:../crypto/pem/pem_lib.c:357:
+unable to load Private Key
+140492096963904:error:0909006C:PEM routines:get_name:no start line:../crypto/pem/pem_lib.c:745:Expecting: ANY PRIVATE KEY
+
+Easy-RSA error:
+
+Failed to build the CA
+
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-ca
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+
+Enter New CA Key Passphrase:
+Re-Enter New CA Key Passphrase:
+Generating RSA private key, 2048 bit long modulus (2 primes)
+....+++++
+..................................+++++
+e is 65537 (0x010001)
+unable to load Private Key
+140049088963904:error:28078065:UI routines:UI_set_result_ex:result too small:../crypto/ui/ui_lib.c:905:You must type in 4 to 1023 characters
+140049088963904:error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt:../crypto/evp/evp_enc.c:610:
+140049088963904:error:0906A065:PEM routines:PEM_do_header:bad decrypt:../crypto/pem/pem_lib.c:461:
+
+Easy-RSA error:
+
+Failed to build the CA
+
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-ca nopass
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Generating RSA private key, 2048 bit long modulus (2 primes)
+..................................+++++
+....................................+++++
+e is 65537 (0x010001)
+Can't load /etc/easy-rsa/pki/.rnd into RNG
+140507530831168:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:98:Filename=/etc/easy-rsa/pki/.rnd
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Common Name (eg: your user, host, or server name) [Easy-RSA CA]:server
+
+CA creation complete and you may now import and sign cert requests.
+Your new CA certificate file for publishing is at:
+/etc/easy-rsa/pki/ca.crt
+
+root@vpnserver:/etc/easy-rsa# ./easyrsa gen-dh
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Generating DH parameters, 2048 bit long safe prime, generator 2
+This is going to take a long time
+............................................................+...........................................................................................................................................................................................................................................................................+..........+......................................................................................................................+.........................................................................................++*++*++*++*
+
+DH parameters of size 2048 created at /etc/easy-rsa/pki/dh.pem
+
+root@vpnserver:/etc/easy-rsa# cd /etc/easy-rsa
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-server-full server nopass
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Generating a RSA private key
+....................................+++++
+.....+++++
+writing new private key to '/etc/easy-rsa/pki/private/server.key.gEW6nCRXWj'
+-----
+Using configuration from /etc/easy-rsa/pki/safessl-easyrsa.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'server'
+Certificate is to be certified until Mar 26 22:45:01 2025 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+root@vpnserver:/etc/easy-rsa# openvpn --genkey --secret /etc/easy-rsa/pki/ta.key
+root@vpnserver:/etc/easy-rsa# ./easyrsa gen-crl
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Using configuration from /etc/easy-rsa/pki/safessl-easyrsa.cnf
+
+An updated CRL has been created.
+CRL file: /etc/easy-rsa/pki/crl.pem
+
+root@vpnserver:/etc/easy-rsa# cp -rp /etc/easy-rsa/pki/{ca.crt,dh.pem,ta.key,crl.pem,issued,private} /etc/openvpn/server/
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-client-full bamhammed nopass
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Generating a RSA private key
+.....................+++++
+.+++++
+writing new private key to '/etc/easy-rsa/pki/private/bamhammed.key.JHKeo40c2V'
+-----
+Using configuration from /etc/easy-rsa/pki/safessl-easyrsa.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'bamhammed'
+Certificate is to be certified until Mar 26 22:48:04 2025 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+root@vpnserver:/etc/easy-rsa# ./easyrsa build-client-full client2 nopass
+
+Using SSL: openssl OpenSSL 1.1.1f  31 Mar 2020
+Generating a RSA private key
+..........+++++
+...............................+++++
+writing new private key to '/etc/easy-rsa/pki/private/client2.key.nCn8cC8F60'
+-----
+Using configuration from /etc/easy-rsa/pki/safessl-easyrsa.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'client2'
+Certificate is to be certified until Mar 26 22:48:52 2025 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+root@vpnserver:/etc/easy-rsa# mkdir /etc/openvpn/client/{bamhammed,client2}
+root@vpnserver:/etc/easy-rsa# cp -rp /etc/easy-rsa/pki/{ca.crt,issued/koromicha.crt,private/bamhammed.key} /etc/openvpn/client/bamhammed
+cp: cannot stat '/etc/easy-rsa/pki/issued/koromicha.crt': No such file or directory
+root@vpnserver:/etc/easy-rsa# cp -rp /etc/easy-rsa/pki/{ca.crt,issued/bamhammed.crt,private/bamhammed.key} /etc/openvpn/client/bamhammed
+root@vpnserver:/etc/easy-rsa# cp -rp /etc/easy-rsa/pki/{ca.crt,issued/client2.crt,private/client2.key} /etc/openvpn/client/client2
+root@vpnserver:/etc/easy-rsa# cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/server/
+root@vpnserver:/etc/easy-rsa# cd /etc/openvpn/server/
+root@vpnserver:/etc/openvpn/server# gunzip server.conf.gz
+root@vpnserver:/etc/openvpn/server# nano /etc/openvpn/server/server.conf
+root@vpnserver:/etc/openvpn/server# sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+root@vpnserver:/etc/openvpn/server# sysctl --system
+* Applying /etc/sysctl.d/10-console-messages.conf ...
+kernel.printk = 4 4 1 7
+* Applying /etc/sysctl.d/10-ipv6-privacy.conf ...
+net.ipv6.conf.all.use_tempaddr = 2
+net.ipv6.conf.default.use_tempaddr = 2
+* Applying /etc/sysctl.d/10-kernel-hardening.conf ...
+kernel.kptr_restrict = 1
+* Applying /etc/sysctl.d/10-link-restrictions.conf ...
+fs.protected_hardlinks = 1
+fs.protected_symlinks = 1
+* Applying /etc/sysctl.d/10-magic-sysrq.conf ...
+kernel.sysrq = 176
+* Applying /etc/sysctl.d/10-network-security.conf ...
+net.ipv4.conf.default.rp_filter = 2
+net.ipv4.conf.all.rp_filter = 2
+* Applying /etc/sysctl.d/10-ptrace.conf ...
+kernel.yama.ptrace_scope = 1
+* Applying /etc/sysctl.d/10-zeropage.conf ...
+vm.mmap_min_addr = 65536
+* Applying /usr/lib/sysctl.d/50-default.conf ...
+net.ipv4.conf.default.promote_secondaries = 1
+sysctl: setting key "net.ipv4.conf.all.promote_secondaries": Invalid argument
+net.ipv4.ping_group_range = 0 2147483647
+net.core.default_qdisc = fq_codel
+fs.protected_regular = 1
+fs.protected_fifos = 1
+* Applying /usr/lib/sysctl.d/50-pid-max.conf ...
+kernel.pid_max = 4194304
+* Applying /etc/sysctl.d/99-cloudimg-ipv6.conf ...
+net.ipv6.conf.all.use_tempaddr = 0
+net.ipv6.conf.default.use_tempaddr = 0
+* Applying /etc/sysctl.d/99-sysctl.conf ...
+net.ipv4.ip_forward = 1
+* Applying /usr/lib/sysctl.d/protect-links.conf ...
+fs.protected_fifos = 1
+fs.protected_hardlinks = 1
+fs.protected_regular = 2
+fs.protected_symlinks = 1
+* Applying /etc/sysctl.conf ...
+net.ipv4.ip_forward = 1
+root@vpnserver:/etc/openvpn/server# ufw allow 1194/udp
+Rules updated
+Rules updated (v6)
+root@vpnserver:/etc/openvpn/server# ufw allow ssh
+Rules updated
+Rules updated (v6)
+root@vpnserver:/etc/openvpn/server# ip route get 8.8.8.8
+8.8.8.8 via 10.0.0.1 dev eth0 src 10.0.0.4 uid 0
+    cache
+root@vpnserver:/etc/openvpn/server# nano /etc/ufw/before.rules
+root@vpnserver:/etc/openvpn/server# sed -i 's/DEFAULT_FORWARD_POLICY="DROP"/DEFAULT_FORWARD_POLICY="ACCEPT"/' /etc/default/ufw
+root@vpnserver:/etc/openvpn/server# ufw reload
+Firewall not enabled (skipping reload)
+root@vpnserver:/etc/openvpn/server# ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
+root@vpnserver:/etc/openvpn/server# systemctl enable --now openvpn-server@server
+Created symlink /etc/systemd/system/multi-user.target.wants/openvpn-server@server.service → /lib/systemd/system/openvpn-server@.service.
+root@vpnserver:/etc/openvpn/server# systemctl status openvpn-server@server
+● openvpn-server@server.service - OpenVPN service for server
+     Loaded: loaded (/lib/systemd/system/openvpn-server@.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2022-04-11 23:01:24 UTC; 22s ago
+       Docs: man:openvpn(8)
+             https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage
+             https://community.openvpn.net/openvpn/wiki/HOWTO
+   Main PID: 16362 (openvpn)
+     Status: "Initialization Sequence Completed"
+      Tasks: 1 (limit: 19197)
+     Memory: 840.0K
+     CGroup: /system.slice/system-openvpn\x2dserver.slice/openvpn-server@server.service
+             └─16362 /usr/sbin/openvpn --status /run/openvpn-server/status-server.log --status-version 2 --suppress-timestamps --config server.conf
+
+Apr 11 23:01:24 vpnserver systemd[1]: Starting OpenVPN service for server...
+Apr 11 23:01:24 vpnserver systemd[1]: Started OpenVPN service for server.
+root@vpnserver:/etc/openvpn/server# ip add s
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:0d:3a:22:68:3e brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.4/24 brd 10.0.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20d:3aff:fe22:683e/64 scope link
+       valid_lft forever preferred_lft forever
+3: enP62193s1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master eth0 state UP group default qlen 1000
+    link/ether 00:0d:3a:22:68:3e brd ff:ff:ff:ff:ff:ff
+    altname enP62193p0s2
+4: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 100
+    link/none
+    inet 10.8.0.1/24 brd 10.8.0.255 scope global tun0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::7ce:8ee:76c5:65b3/64 scope link stable-privacy
+       valid_lft forever preferred_lft forever
+root@vpnserver:/etc/openvpn/server# tail /var/log/openvpn/openvpn.log
+/sbin/ip link set dev tun0 up mtu 1500
+/sbin/ip addr add dev tun0 10.8.0.1/24 broadcast 10.8.0.255
+Could not determine IPv4/IPv6 protocol. Using AF_INET
+Socket Buffers: R=[212992->212992] S=[212992->212992]
+UDPv4 link local (bound): [AF_INET][undef]:1194
+UDPv4 link remote: [AF_UNSPEC]
+MULTI: multi_init called, r=256 v=256
+IFCONFIG POOL: base=10.8.0.2 size=252, ipv6=0
+IFCONFIG POOL LIST
+Initialization Sequence Completed
+root@vpnserver:/etc/openvpn/server#
